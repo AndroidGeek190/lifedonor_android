@@ -1,0 +1,48 @@
+apply plugin: 'com.android.application'
+
+android {
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+    }
+    compileSdkVersion 24
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.erginus.lifedonor"
+        minSdkVersion 16
+        targetSdkVersion 24
+        versionCode 9
+        versionName "1.0"
+    }
+    buildTypes {
+
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+repositories {
+    mavenCentral()
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.2.0'
+    compile 'com.android.support:design:24.2.0'
+    compile 'com.romainpiel.shimmer:library:1.4.0@aar'
+    compile 'com.google.android.gms:play-services-gcm:9.0.0'
+    compile 'com.google.android.gms:play-services-auth:9.0.0'
+    compile 'com.android.support:cardview-v7:24.2.0'
+    compile 'com.facebook.android:facebook-android-sdk:4.13.1'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.github.ksoichiro:androidpagecontrol:0.1.1'
+    compile 'com.mcxiaoke.volley:library:1.0.16'
+    compile files('lib/httpcore-4.3.jar')
+    compile files('lib/httpmime-4.3.jar')
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.1.+'
+    compile 'tyrantgit:explosionfield:1.0.1'
+    compile files('lib/SOMAAndroidSDK5.0.4.jar')
+}

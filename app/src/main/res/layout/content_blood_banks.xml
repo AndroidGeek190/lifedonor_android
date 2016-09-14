@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_blood_banks"
+    android:background="@drawable/bg">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <include layout="@layout/toolbar"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/state1"
+         />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+        <ExpandableListView
+            android:id="@+id/expandableListView"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
+            android:divider="@null"
+            android:fastScrollEnabled="true"
+            android:drawSelectorOnTop="true"
+            android:dividerHeight="20dp" />
+    <!--<com.erginus.lifedonor.Common.EndlessListView-->
+        <!--android:layout_below="@+id/state1"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:scrollbars="none"-->
+        <!--android:layout_weight="1"-->
+        <!--android:dividerHeight="20dp"-->
+        <!--android:divider="@null"-->
+        <!--android:paddingRight="4dip"-->
+        <!--android:id="@+id/listView" />-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/indexer_layout"-->
+        <!--android:layout_width="30dip"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:orientation="vertical" />-->
+</LinearLayout>
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/section_toast_layout"-->
+        <!--android:layout_width="50dip"-->
+        <!--android:layout_height="50dip"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:background="@drawable/current_letter_bubble"-->
+        <!--android:visibility="gone" >-->
+
+        <TextView
+            android:id="@+id/section_toast_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#8E8E8E"
+            android:textSize="30sp" />
+    <!--</RelativeLayout>-->
+</LinearLayout>
+</RelativeLayout>

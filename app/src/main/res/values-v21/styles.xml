@@ -1,0 +1,45 @@
+<resources>>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="apcStyles">@style/AppPageControlStyle</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+    </style>
+    <style name="AppPageControlStyle">
+        <!-- To change indicator size -->
+        <item name="apc_indicatorSize">5dp</item>
+        <!-- To change distance between indicators -->
+        <item name="apc_indicatorDistance">4dp</item>
+        <!-- To change current item indicator size -->
+        <item name="apc_currentIndicatorSize">6dp</item>
+        <!-- To change indicator colors -->
+        <item name="apc_colorCurrentDefault">@color/colorPrimary</item>
+        <item name="apc_colorCurrentPressed">@color/colorPrimary</item>
+        <item name="apc_colorNormalDefault">@color/indexer_bar_bg_color</item>
+        <item name="apc_colorNormalPressed">@color/colorPrimary</item>
+    </style>
+
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">-->
+    <!--&lt;!&ndash; Both of these are needed &ndash;&gt;-->
+
+    <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+    <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+    <!--<item name="colorAccent">@color/colorAccent</item>-->
+    <!--<item name="drawerArrowStyle">@style/DrawerArrowStyle</item>-->
+
+    <!--</style>-->
+</resources>
+

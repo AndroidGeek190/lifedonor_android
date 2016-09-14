@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "4724450698",
+    "project_id": "lifedonor-1324"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:4724450698:android:990709de287ccfbd",
+        "android_client_info": {
+          "package_name": "com.erginus.lifedonor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "4724450698-e8q0tckl0b5gn76gn4n0ueuuoafekltk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.erginus.lifedonor",
+            "certificate_hash": "0B90274699B56C5511ED59CD7C9219460D408623"
+          }
+        },
+        {
+          "client_id": "4724450698-mkrumoifnc29iqntq49j2k3o8utcif0d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAdOq1_t6kskR3_64Iw3aOi1w1ptg50RI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

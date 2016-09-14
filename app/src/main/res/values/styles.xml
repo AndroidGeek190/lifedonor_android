@@ -1,0 +1,84 @@
+<!--<resources>-->
+
+<!--&lt;!&ndash; Base application theme. &ndash;&gt;--><!--<style name="AppTheme" parent="Theme.AppCompat.NoActionBar">--><!--&lt;!&ndash; Customize your theme here. &ndash;&gt;--><!--<item name="colorPrimary">@color/colorPrimary</item>--><!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>--><!--<item name="colorAccent">@color/colorAccent</item>--><!--<item name="drawerArrowStyle">@style/Theme.Test.DrawerArrowStyle</item>--><!--</style>--><!--<style name="Theme.Test.DrawerArrowStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">--><!--<item name="spinBars">true</item>--><!--<item name="color">@android:color/white</item>--><!--</style>--><!--</resources>-->
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Both of these are needed -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+
+        <item name="android:textAppearanceLargePopupMenu">@style/myPopupMenuTextAppearanceLarge
+        </item>
+        <item name="android:textAppearanceSmallPopupMenu">@style/myPopupMenuTextAppearanceSmall
+        </item>
+        <item name="dropDownListViewStyle">@style/PopupMenuListView</item>
+        <item name="android:dropDownListViewStyle">@style/PopupMenuListView</item>
+        <item name="apcStyles">@style/AppPageControlStyle</item>
+    </style>
+
+
+    <style name="PopupMenuListView" parent="@style/Widget.AppCompat.Light.ListView.DropDown">
+        <item name="android:divider">@android:color/darker_gray</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style>
+
+    <style name="myPopupMenuTextAppearanceSmall" parent="@android:style/TextAppearance.DeviceDefault.Widget.PopupMenu.Small">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="myPopupMenuTextAppearanceLarge" parent="@android:style/TextAppearance.DeviceDefault.Widget.PopupMenu.Large">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <style name="list_item_appearance">
+
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">sans-serif-medium</item>
+    </style>
+
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="CustomSearchView" parent="Widget.AppCompat.SearchView">
+        <!-- <item name="layout">@layout/search_view_layout</item>-->
+        <item name="queryBackground">@null</item>
+
+    </style>
+
+    <style name="ToolbarSearchView" parent="Base.ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="searchViewStyle">@style/CustomSearchView</item>
+
+    </style>
+
+    <style name="TwoWayView">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="AppPageControlStyle">
+    <!-- To change indicator size -->
+    <item name="apc_indicatorSize">5dp</item>
+    <!-- To change distance between indicators -->
+    <item name="apc_indicatorDistance">4dp</item>
+    <!-- To change current item indicator size -->
+    <item name="apc_currentIndicatorSize">6dp</item>
+    <!-- To change indicator colors -->
+    <item name="apc_colorCurrentDefault">@color/colorPrimary</item>
+    <item name="apc_colorCurrentPressed">@color/colorPrimary</item>
+    <item name="apc_colorNormalDefault">@color/indexer_bar_bg_color</item>
+    <item name="apc_colorNormalPressed">@color/colorPrimary</item>
+    </style>
+</resources>

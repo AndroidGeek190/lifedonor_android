@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f44336</color>
+    <color name="colorPrimaryDark">#c3362b</color>
+    <color name="colorAccent">#c3362b</color>
+    <color name="indexer_bar_bg_color">#40000000</color>
+    <color name="indexer_bar_selected_color">#f44336</color>
+    <color name="letter_bg_color">#c3362b</color>
+    <color name="about_us_bg">#ED3237</color>
+
+</resources>
